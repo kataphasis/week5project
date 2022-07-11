@@ -1,0 +1,49 @@
+--add customers
+SELECT addcustomer('Jerry', 'Themouse');
+SELECT addcustomer('Spongebob', 'Squarepants');
+SELECT addcustomer('Tom', 'Thecat');
+SELECT addcustomer('Gary', 'TheSnail');
+SELECT addcustomer('Patrick', 'Star');
+Select *
+from customer
+--add employees
+SELECT addsalesperson ('Eugene', 'Crabs');
+SELECT addsalesperson ('Professor', 'Utonium');
+SELECT addsalesperson ('Catdog', 'Dogcat');
+SELECT addsalesperson ('George', 'Jetson');
+SELECT addsalesperson ('Bugs', 'Bunny');
+select *
+from employees
+--add mechanics
+SELECT addmechanic('Fixit', 'Felix');
+SELECT addmechanic('Wreckit', 'Ralph');
+SELECT addmechanic('Popeye', 'Sailorman');
+select *
+from mechanic
+-- add vehicles
+SELECT addvehicle(12345, 'Patty', 'Wagon', 'True', 2);
+SELECT addvehicle(12346, 'Mystery', 'Machine', 'True', 3);
+SELECT addvehicle(12347, 'Cave', 'Mobile' , 'True', 4);
+select *
+from vehicle
+-- add sales invoice
+SELECT addSalesinvoice(2, 1, 3);
+SELECT addSalesinvoice(3, 2, 3);
+SELECT addSalesinvoice(4, 3, 3);
+select *
+from sales_invoice
+-- add job
+SELECT addjob('oil change');
+SELECT addjob('tire change');
+SELECT addjob('brake change');
+select *
+from job
+-- add service ticket
+SELECT addserviceticket(1, 2, 3, 1);
+SELECT addserviceticket(2, 2, 2, 1);
+select *
+from service_ticket
+-- add service team
+SELECT addserviceteam (4, 1, 1);
+SELECT *
+FROM service_team
